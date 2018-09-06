@@ -43,5 +43,5 @@ sorted_grocery_list = grocery_list.sort
 print_list(sorted_grocery_list)
 separate
 
-sorted_grocery_list.delete('Salmon')
+sorted_grocery_list.delete('salmon')
 print_list(sorted_grocery_list)
