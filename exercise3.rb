@@ -21,9 +21,9 @@ dictionary = {
 }
 
 movies = {
-  :Lord_of_the_Rings => 2001,
-  :Star_Wars => 2008,
-  :Inception => 2010
+  "Lord of the Rings" => 2001,
+  "Star Wars" => 2008,
+  "Inception" => 2010
 }
 
 cities = {
@@ -37,3 +37,28 @@ relatives = {
   :Shannon => 24,
   :Joshua => 18
 }
+
+
+# Print out the first two performing artists in that array.
+puts fav_artists[0..1]
+separate
+
+# For each of your favourite movies, print out a sentence about when the movie was released. For example:
+# Avatar came out in 2009.
+# Mean Girls came out in 2004.
+# The Matrix came out in 1999.
+movies.each do |movie, year|
+  puts "#{movie} came out in  #{year}"
+end
+separate
+
+# Sort and reverse the array of ages of your family. Save it and print it to the screen.
+# See if you can sort and reverse the array on one line!
+
+sorted_and_reversed_ages = ages.sort.reverse
+puts sorted_and_reversed_ages
+separate
+
+# Add "Beauty and the Beast" movie to your hash of movies information, but with a twist: the movie was released both in 1991 and in 2017. Print it out.
+movies["Beauty and the Beast"] = [1991, 2017]
+puts movies
