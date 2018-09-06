@@ -16,5 +16,5 @@ end
 
 puts "Your order is as follows: "
 pizza_order.each do |pizza_number, toppings|
-  puts "pizza_number #{pizza_number+1} has #{toppings+1} toppings"
+  puts "pizza_number #{pizza_number+1} has #{toppings} toppings"
 end
