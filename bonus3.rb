@@ -30,3 +30,30 @@ puts my_absent_dogs
 
 call_absent_dogs(my_dogs)
 call_absent_dogs(neighbours_dogs)
+
+##dogs see squirrel increase position by 5
+puts"------------calling each loop ----------------"
+my_dogs.each do |dog|
+  dog[:position] = dog[:position] + 5
+end
+
+puts my_dogs
+
+def chase_squirrel(dogs)
+  dogs.map do |dog|
+    dog[:position] = dog[:position] + 5
+  end
+end
+puts"------------calling map function----------------"
+chase_squirrel(my_dogs)
+puts my_dogs
+
+def return_dogs(dogs)
+  dogs.map do |dog|
+    dog[:position] = 0
+  end
+end
+
+puts"------------calling return dogs function----------------"
+return_dogs(my_dogs)
+puts my_dogs
